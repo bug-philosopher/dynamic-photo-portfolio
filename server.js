@@ -119,7 +119,7 @@ app.get("/api/albums/:albumId", async (req, res) => {
 });
 
 // Fallback route to serve the SPA
-app.get("*", (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 const PORT = process.env.PORT || 3000;
