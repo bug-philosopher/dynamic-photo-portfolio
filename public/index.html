@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Photo Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1 class="logo">Portfolio</h1>
+      <p class="subtitle">Albums</p>
+      <nav id="album-list" class="album-list"></nav>
+    </aside>
+
+    <main class="content">
+      <header class="content-header">
+        <div>
+          <h2 id="album-title">Select an album</h2>
+          <p id="album-count" class="muted"></p>
+        </div>
+      </header>
+
+      <section id="photo-grid" class="photo-grid"></section>
+    </main>
+  </div>
+
+  <div id="lightbox" class="lightbox hidden">
+    <div class="lightbox-inner">
+      <button id="lightbox-close" class="lightbox-close" aria-label="Close">&times;</button>
+      <img id="lightbox-image" alt="">
+      <div id="lightbox-meta" class="lightbox-meta"></div>
+    </div>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+</html>
