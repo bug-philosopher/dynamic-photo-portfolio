@@ -56,3 +56,4 @@ photos/
 - Album cover system
 - Tagging system
 - About me page
+- Fix bug with weird shutter speed number and rounding
